@@ -1,0 +1,78 @@
+
+header {
+    background-color: var(--base-color-one);
+    padding: var(--standart-padding);
+    text-align: center;
+    background: -webkit-linear-gradient(left, #65f2f4, #5d58f6);
+    background: -moz-linear-gradient(left, #65f2f4, #5d58f6);
+    background: -ms-linear-gradient(left, #65f2f4, #5d58f6);
+    background: -o-linear-gradient(left, #65f2f4, #5d58f6);
+    background: linear-gradient(to right, #65f2f4, #5d58f6);
+}
+
+main {
+    padding: var(--standart-padding);
+}
+
+nav {
+    background: -webkit-linear-gradient(right, #b3fdfb, #0a9893);
+    background: -moz-linear-gradient(right, #b3fdfb, #0a9893);
+    background: -ms-linear-gradient(right, #b3fdfb, #0a9893);
+    background: -o-linear-gradient(right, #b3fdfb, #0a9893);
+    background: linear-gradient(to left, #b3fdfb, #0a9893);
+    padding: var(--standart-padding);
+}
+
+aside {
+    background: -webkit-linear-gradient(left, #b3fdfb, #0a9893);
+background: -moz-linear-gradient(left, #b3fdfb, #0a9893);
+background: -ms-linear-gradient(left, #b3fdfb, #0a9893);
+background: -o-linear-gradient(left, #b3fdfb, #0a9893);
+background: linear-gradient(to right, #b3fdfb, #0a9893);
+    padding: var(--standart-padding);
+    color: #1c3f1b;
+    
+}
+
+footer {
+   background: -webkit-linear-gradient(left, #b3fdfb, #0db9b3);
+background: -moz-linear-gradient(left, #b3fdfb, #0db9b3);
+background: -ms-linear-gradient(left, #b3fdfb, #0db9b3);
+background: -o-linear-gradient(left, #b3fdfb, #0db9b3);
+background: linear-gradient(to right, #b3fdfb, #0db9b3);
+    padding: var(--standart-padding);
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+h2 {
+    color: #064543;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header     header  header"
+        "navigation content aside"
+        "footer     footer  footer";
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+}
+.imagem-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 36.5vh;
+  }
+  .desenvolv {
+    border-radius: 25px;
+  }
+  .imagem {
+    width: 150px; /* Altere conforme necessário */
+    height: auto; /* Manter a proporção da imagem */
+    border-radius: 25rem;
+  }
+  

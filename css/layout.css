@@ -1,0 +1,38 @@
+/* ========= LAYOUT ========= */
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header"
+        "navigation"
+        "content"
+        "aside"
+        "footer";
+}
+.header     { 
+    grid-area: header; 
+}
+.navigation { 
+    grid-area: navigation; 
+}
+.content    { 
+    grid-area: content; 
+}
+.aside      { 
+    grid-area: aside; 
+}
+.footer     { 
+    grid-area: footer; 
+}
+.sumario {
+    position: sticky;
+    top: 0;
+    padding-top: 3rem;
+}
+.fixed-aside {
+    position: sticky;
+    top: 0;
+    padding-top: 3rem;
+}
+
+
